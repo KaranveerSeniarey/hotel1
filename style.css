@@ -1,0 +1,36 @@
+#mainfooter{
+    position: relative;
+    height: 830px;
+    width: 100%;
+    background-color: #f1f5f8;
+}
+
+#quoteimg{
+    object-fit: cover;
+    position: absolute;
+    z-index: 10000;
+    top: 0px;
+    height: 500px;
+}
+
+.footer{
+    position: fixed;
+    bottom: 0vh;
+}
+
+.scroll-watcher{
+    height: 7px;
+    position: fixed;
+    top: 0px;
+    z-index: 10005;
+    width: 100%;
+    transform-origin: left;
+    background: #E29C89;
+    scale: 0 1;
+    animation: scrollwatcher linear;
+    animation-timeline: scroll();
+}
+
+@keyframes scrollwatcher {
+    to{ scale: 1 1; }
+}
