@@ -61,6 +61,7 @@
   body {
     padding: 0;
     margin: 0;
+    overflow-x: hidden;
   }
 
   #header {
@@ -605,7 +606,7 @@
       opacity: 100;
     }
 
-    #row5{
+    #row5 {
       height: 60vh;
     }
 
@@ -807,7 +808,7 @@
       display: none;
     }
 
-    #row5{
+    #row5 {
       height: 85vh;
     }
 
@@ -953,7 +954,7 @@
       <!-- class="d-flex flex-column" -->
       <div class="d-flex flex-column justify-content-center align-items-center shiftdiv1">
 
-        <div class="d-flex shiftdiv2" style="margin-bottom: 7px;">
+        <!-- <div class="d-flex shiftdiv2" style="margin-bottom: 7px;">
 
           <div class="dateinput">
             <span style="color: aliceblue;">Starting Date -> </span> <input type="date" id="date-start" style=""> &nbsp;
@@ -963,13 +964,13 @@
             <span style="color: aliceblue;">Starting Date -> </span> <input type="date" id="date-start" style="">
           </div>
 
-        </div>
+        </div> -->
 
         <!-- data-bs-toggle="dropdown" -->
 
         <div class="d-flex shiftdiv3">
 
-          <div class="dropdown px-2">
+          <!-- <div class="dropdown px-2">
 
             <button class="btn dropdown-toggle p-1 btnz1 text-light" type="button" aria-expanded="false"
               style="border: 2px solid white;">
@@ -981,9 +982,10 @@
               <li><button class="dropdown-item" type="button">Another action</button></li>
               <li><button class="dropdown-item" type="button">Something else here</button></li>
             </ul>
-          </div>
 
-          <div class="dropdown px-2">
+          </div> -->
+
+          <!-- <div class="dropdown px-2">
 
             <button class="btn dropdown-toggle p-1 btnz2 text-light" type="button" aria-expanded="false"
               style="border: 2px solid white;">
@@ -995,9 +997,13 @@
               <li><button class="dropdown-item" type="button">Another action</button></li>
               <li><button class="dropdown-item" type="button">Something else here</button></li>
             </ul>
-          </div>
+          </div> -->
 
-          <button class="btn btn-primary p-1">Search</button>
+          <button
+            class="btn btn-primary">
+            <a href="#hero3" style="color: white;text-decoration: none;">Book Now !</a>
+          </button>
+
 
         </div>
 
@@ -1533,6 +1539,8 @@
     }, 4000);
 
   </script>
+
+  <!-- <script src="https://cdn.tailwindcss.com"></script> -->
 
 </body>
 
