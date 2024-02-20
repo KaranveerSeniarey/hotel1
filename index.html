@@ -1336,41 +1336,22 @@
 
 
   <script>
-    // let flagbtn = 1;
     let bookbtn = document.querySelector('.btnbook');
 
     bookbtn.addEventListener('click', () => {
 
-      bookbtn.style.transform = 'scale(1.1)';
-      bookbtn.style.boxShadow = '0px 0px 20px 0px #E29C89';
+      if (window.innerWidth <= 1200) {
+        bookbtn.style.transform = 'scale(1.1)';
+        bookbtn.style.boxShadow = '0px 0px 20px 0px #E29C89';
 
-      setTimeout(() => {
+        setTimeout(() => {
 
-        bookbtn.style.transform = 'scale(1)';
-        bookbtn.style.boxShadow = 'none';
+          bookbtn.style.transform = 'scale(1)';
+          bookbtn.style.boxShadow = 'none';
 
-      }, 300);
-
-
-
-      // if (window.innerWidth >= 750 && window.innerWidth <= 1200) {
-
-      //   if (flagbtn == 1) {
-      //     bookbtn.style.transform = 'scale(1.1)';
-      //     bookbtn.style.boxShadow = '0px 0px 20px 0px #E29C89';
-      //     flag = 0;
-      //   } 
-
-      //   else {
-      //     flag = 1;
-      //     bookbtn.style.transform = 'scale(1)';
-      //     bookbtn.style.boxShadow = 'none';
-      //   }
-      // }
-
+        }, 300);
+      }
     })
-
-
   </script>
 
 
